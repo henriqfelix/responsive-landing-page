@@ -81,3 +81,52 @@ img {
   z-index: var(--z-fixed);
   background-color: var(--first-color);
 }
+
+.nav {
+  height: var(--header-heigth);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    padding: 3.5rem 1, 5rem 0;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: 0.5;
+  }
+}
+
+.nav__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__item {
+  margin-bottom: 2rem;
+}
+
+.nav__close,
+.nav__link,
+.nav__logo,
+.nav__toggle {
+  color: var(--white-color);
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
