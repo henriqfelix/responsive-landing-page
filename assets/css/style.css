@@ -1,0 +1,63 @@
+/*-=-= Google Fonts =-=-*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*-=-= Variables =-=-*/
+:root {
+  --header-heigth: 3rem;
+
+  /*-=-= Colors =-=-*/
+  --first-color: #fca4a6;
+  --first-color-dark: #c1576a;
+  --first-color-darken: #a83e51;
+  --white-color: #fcf8f8;
+
+  /*-=-= Font and Typography =-=-*/
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2.5rem;
+  --normal-font-size: 0.938rem;
+
+  /*-=-= Z Index =-=-*/
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*-=-= Base =-=-*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: var(--header-heigth) 0 0 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
